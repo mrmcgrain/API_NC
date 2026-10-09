@@ -106,3 +106,14 @@ a { color:var(--mint); }
   .lesson-strip h2 { font-size:19px; }
   .debug-section { margin-top:14px; padding-top:12px; }
 }
+/* Keep every flow caption inside its panel at presentation sizes. */
+.flow-panel { display:flex; flex-direction:column; }
+.flow-panel .panel-heading,.flow-panel .panel-caption,.flow-panel nav,.flow-foot { flex-shrink:0; }
+.flow-panel .diagram { flex:1; min-height:0; }
+.flow-panel .diagram svg { height:100%; min-height:145px; }
+.node text { font-size:17px; }
+.node text.node-sub { font-size:12px; }
+@media (min-width:1060px) {
+  .workspace { grid-template-rows:clamp(290px,36vh,380px) clamp(180px,21vh,225px); }
+  #code { font-size:12px; }
+}

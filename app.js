@@ -131,13 +131,17 @@ function renderStage() {
   $("#promise-text").textContent = stage.promise;
   $("#promise").classList.toggle("pending", stage.id === 3 || stage.id === 4);
   $("#request-url").textContent = trace && evidenceStage >= 2 ? trace.url : "The request URL appears at step 2.";
+  $("#request-method").textContent = trace?.mode === "no-data" ? "LOCAL" : "GET";
   $("#http-status").textContent = trace?.http && evidenceStage >= 5 ? `${trace.http.status} ${trace.http.ok ? "OK" : "ERROR"}` : "—";
   $("#http-status").classList.toggle("error-pill", Boolean(trace?.http && !trace.http.ok && evidenceStage >= 5));
   $("#timing").textContent = trace && (evidenceStage >= 5 || isError) ? `${trace.headersMs !== undefined ? `Headers ${trace.headersMs} ms · ` : ""}Complete ${trace.duration} ms${trace.mode === "no-data" ? " · local fixture" : " · actual network run"}` : "Actual duration appears when the replay reaches the response.";
   $("#response-body").textContent = trace && evidenceStage >= 6 && trace.data !== undefined ? format(trace.data) : "The parsed response appears at step 6.";
   resultElement.textContent = isError ? "No result. Request failed." : trace && stage.id === 8 ? trace.value : "Waiting for the render step…";
   $("#debug").disabled = busy || !trace || evidenceStage < 7 || trace.mode !== "live" || typeof trace.value !== "string";
-  if ($("#debug").disabled) $("#debug-example").hidden = true;
+  if ($("#debug").disabled) {
+    $("#debug-example").hidden = true;
+    $("#debug").setAttribute("aria-expanded", "false");
+  }
   document.querySelectorAll(".node").forEach(node => node.classList.toggle("active", node.id === `node-${stage.node}`));
   packetAnimation?.cancel();
   const packet = $("#packet");
@@ -181,6 +185,13 @@ $("#request-form").addEventListener("submit", async (event) => {
   current = 0;
   $("#status").textContent = mode === "no-data" ? "Running labeled local no-data fixture. No HTTP request." : "Live request running at normal speed…";
   $("#capture").textContent = "Recording this transaction";
+  $("#stage-kicker").textContent = "RECORDING · NORMAL SPEED";
+  $("#step-count").textContent = mode === "no-data" ? "LOCAL" : "LIVE";
+  $("#promise-text").textContent = "Recording before replay";
+  $("#promise").classList.remove("pending");
+  $("#packet-label").textContent = "Waiting for the recorded trace";
+  document.querySelectorAll(".node").forEach(node => node.classList.remove("active"));
+  renderCode(0);
   $("#request-url").textContent = "Recording a new transaction…";
   $("#http-status").textContent = "—";
   $("#response-body").textContent = "Waiting for this response…";
@@ -233,6 +244,7 @@ document.addEventListener("keydown", event => {
 });
 $("#debug").addEventListener("click", () => {
   $("#debug-example").hidden = !$("#debug-example").hidden;
+  $("#debug").setAttribute("aria-expanded", String(!$("#debug-example").hidden));
   $("#wrong-value").textContent = format(trace.data.message);
   $("#right-value").textContent = format(trace.data.args.message);
   $("#debug-explanation").textContent = "The response is valid. The wrong path returns undefined. Inspect args in panel 03, then correct the field path. This is an intentional teaching example, not a failed live request.";

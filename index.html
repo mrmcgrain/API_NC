@@ -51,7 +51,7 @@
     <section class="panel response-panel" aria-labelledby="response-title">
       <div class="panel-heading"><h2 id="response-title"><span class="panel-number">03</span> Request / response</h2><span id="http-status" class="pill neutral">—</span></div>
       <p class="panel-caption">App-recorded evidence. Verify the HTTP transaction in DevTools Network.</p>
-      <div class="request-meta"><div><span>GET</span><code id="request-url">The request URL appears at step 2.</code></div><div><span>TIME</span><code id="timing">Actual duration appears when the replay reaches the response.</code></div></div>
+      <div class="request-meta"><div><span id="request-method">GET</span><code id="request-url">The request URL appears at step 2.</code></div><div><span>TIME</span><code id="timing">Actual duration appears when the replay reaches the response.</code></div></div>
       <pre id="response-body" tabindex="0" aria-label="Response JSON">The parsed response appears at step 6.</pre>
     </section>
     <section class="panel logs-panel" aria-labelledby="logs-title">
@@ -63,7 +63,7 @@
   <footer class="lesson-strip"><div><span id="stage-kicker" class="eyebrow">BEFORE THE REQUEST</span><h2 id="stage-title">Make the invisible visible.</h2><p id="explanation">Send a message. Then use Next step to trace it through the browser, the API, and your code.</p></div><div class="result-card"><span class="eyebrow">REPLAY RESULT</span><p id="result" aria-live="polite">No message yet</p></div></footer>
   <section class="debug-section">
     <div><h2>A successful request can still produce a bug.</h2><p>Inspect the object before trusting your assumptions.</p></div>
-    <button id="debug" type="button" disabled>Try the wrong-field example</button>
+    <button id="debug" type="button" disabled aria-controls="debug-example" aria-expanded="false">Try the wrong-field example</button>
     <div id="debug-example" hidden><span class="pill">INTENTIONAL TEACHING BUG</span><div class="debug-grid"><div><code>data.message</code><pre id="wrong-value"></pre></div><div><code>data.args.message</code><pre id="right-value"></pre></div></div><p id="debug-explanation"></p></div>
   </section>
   <p class="page-note">Use F12 to open real DevTools. Arrow keys step through replay when focus is outside inputs. Send only non-sensitive messages. <a href="PRESENTATION.md">Three-minute presenter guide</a></p>
