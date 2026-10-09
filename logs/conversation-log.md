@@ -62,3 +62,57 @@ Errors/Fixes:
 
 ### Next Steps
 - Continue the result-display/error-handling checkpoint, then the teaching replay when development resumes.
+
+## 2026-10-08 20:11:12 -07:00
+
+### User Request
+Granted broad autonomy for API_NC.
+
+### Codex Response
+Accepted autonomy for routine project development, verification, commits and pushes. This does not change tool capabilities or grant authority over unrelated projects.
+
+### Actions
+- Recorded the owner's clarified autonomy preference in project records and recaps.
+- No application changes made on this confirmation turn.
+
+### Next Steps
+- Continue the existing lesson implementation when development resumes.
+
+## 2026-10-08 20:26 · Complete visual demo
+
+### User Request
+Authorized completing all checkpoints autonomously with clear commits and messages. No simulated student review is claimed.
+
+### Codex Response
+Implemented the complete four-panel API teaching replay, code highlights, request/response evidence, expandable Console snapshots, animation, debugging example, error experiments and presenter guide.
+
+### Actions
+Commands:
+- Inspected current project state, Git history and existing multi-chat publication authorization; preserved external record changes.
+- node --check app.js and Git whitespace checks passed.
+- Playwright CLI browser QA: actual httpbin echo and HTTP 404; offline mode; controlled malformed JSON and no-data fixture; replay request counting; source highlights; keyboard; reduced motion; responsive layout; separate 15-second timeout.
+- Browser QA script loaded using CLI --filename after Windows multiline/length limits prevented passing the whole snippet on the command line.
+- Created commits 7cbc028, d36762b and 9a207f9 for separate implementation checkpoints.
+
+Files changed:
+- index.html, app.js, styles.css: complete teaching demo.
+- README.md and PRESENTATION.md: operating instructions and timed teaching script.
+- CHANGELOG.md: checkpoint additions.
+- Project records and recaps: actual outcomes and exact visible responses.
+
+Errors/Fixes:
+- Stage 4 had no code highlight because server source is external. Corrected it to highlight the still-waiting fetch call.
+- Active code initially failed to scroll into view due to subtracting an offset from the wrong coordinate system. Corrected relative scroll offset and verified it in the browser.
+- Long parsed-data log hid its summary; scrolling now starts at the newest event header.
+- Tight desktop flow panel clipped its explanatory caption. Switched the diagram to flexible available-height sizing and verified desktop screenshots.
+
+Verification:
+- Actual live response matched the requested message, including Unicode and literal HTML, safely rendered with textContent.
+- Failed traces show only reached stages and the error boundary; local fixture shows no server stage.
+- Replay did not issue any additional HTTP requests.
+- No reviewer attendance, acceptance of individual diffs, or personal student rehearsal is fabricated.
+
+### Next Steps
+- Student rehearses the three-minute guide and reviews one checkpoint diff for the class demo.
+
+Publication verification: git push origin main succeeded; git ls-remote matched local application HEAD 9a207f9cb5bc5e4dc0089fef75d8328ced89466f. Final clean browser request and settled-animation screenshot passed; flow caption is fully inside its panel. Local server remains running for handoff.

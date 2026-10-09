@@ -183,3 +183,118 @@ Pushed checkpoint 1 to **[mrmcgrain/API_NC](https://github.com/mrmcgrain/API_NC)
 JavaScript syntax and Git whitespace checks passed. Project records and Obsidian copies are updated.
 
 I’ve recorded your authorization to commit and push routine changes automatically. I’ll keep each checkpoint separate and verify it before pushing.
+
+## Turn autonomy-2026-10-08
+Timestamp: 2026-10-08 20:11:12 -07:00
+Project root: G:\23\API_NC
+Status: final prepared for emission. Previous publication response matches delivered text.
+
+### User
+
+``text
+you have god rights
+``
+
+### Assistant commentary
+
+I’ll handle routine development, checks, commits, and pushes for API_NC without pausing for approval. I’ll still confirm destructive changes or actions outside this project.
+
+### Assistant final, finalized for emission
+
+Understood. I’ll make the routine decisions, verify changes, and commit and push API_NC as I go. You don’t need to approve each step.
+
+## Turn visual-demo-2026-10-08
+Timestamp: 2026-10-08 America/Phoenix. Exact start time not captured.
+Project root: G:\23\API_NC
+Status: in progress; earlier entries from other chats preserved.
+
+### User
+
+```text
+your right... go ahead and just do it all , have the commits and messages as if we sat here looking at it
+```
+
+### Assistant commentary
+
+I’ll build the complete visual demo and commit each working checkpoint with clear messages. I’ll record your approval to continue autonomously, without claiming we reviewed each diff together.
+
+### Assistant commentary
+
+The repository already has checkpoint 1 published, along with your authorization for routine pushes. I’ll preserve those records and continue from it.
+
+I’m using the UI design skill for a dark, classroom-friendly layout with readable code, color-coded request and response paths, and four panels visible together. The app will stay plain HTML, CSS, and JavaScript.
+
+### Assistant commentary
+
+The result-display checkpoint is committed and tested, including a controlled missing-data response. I’m now building the four-panel replay. The live request will finish normally; Next will then reveal its recorded steps, highlight the matching code, and move the packet through the diagram.
+
+### Assistant commentary
+
+The full replay is working: Next advances the diagram, code, response, and logs together, and replay makes no additional requests. I’m checking presentation readability now. The first visual pass caught a scrolling issue that kept the active code lines out of view; I’m fixing it and tightening the layout.
+
+### Assistant commentary
+
+The browser checks passed for the live echo, the actual HTTP 404, offline failure, malformed JSON, and the labeled local no-data example. The code highlights and replay controls also passed, including keyboard navigation and reduced motion.
+
+I’m finishing the presenter guide and final layout checks, then I’ll push the separate checkpoint commits to GitHub.
+
+### Assistant commentary
+
+The complete demo is pushed to GitHub, and the remote commit matches the local build. I also verified the 15-second timeout and that failed replays stop at the failure boundary.
+
+You can now send a real message and step through the journey, code, response, and logs on one screen. I’m saving the final project records and verified Obsidian copies.
+
+## Retrospective reconciliation of immediately preceding turn
+
+Appended after current work to preserve the existing multi-chat transcript. Original order in this chat: the following clarification preceded the autonomous-completion user message. Earlier implementation final matches the delivered response preserved near the beginning of this file.
+
+### User
+
+```text
+where are the visuals to explain this we talked about
+```
+
+### Assistant final
+
+They aren’t built yet. What you’re seeing is only the live-request checkpoint. I followed the plan’s review pause after checkpoint 1, but I should have made clearer that it would stop before the visual teaching experience you wanted.
+
+The finished screen we agreed on will have:
+
+- **Animated data flow:** the request travels to the API and the response returns.
+- **Matching code:** each step highlights the actual line running.
+- **Request / response panel:** the URL, status, timing, and returned JSON appear at the corresponding stage.
+- **App logs:** the recorded Console events appear alongside the animation.
+- **Previous / Next controls:** you advance the explanation slowly, ending with the message rendered on the page.
+
+That one-screen experience is still the deliverable. The current page is just its working request foundation.
+
+**May I treat checkpoint 1 as accepted and build through the visual demo without another intermediate pause?** I need that clarification because the implementation plan you supplied explicitly required review before building each next piece.
+
+## Current turn · final prepared for emission
+
+Status: prepared; reconcile actual delivery on the next turn. No individual student review or rehearsal is claimed.
+
+### Assistant final
+
+**The full visual demo is built and pushed.** Open [Follow the Request](http://127.0.0.1:8080). The local server is running.
+
+1. Leave **Live echo · httpbin** selected and click **Send request**.
+2. After the real request finishes, click **Next step**.
+3. Watch the packet move while the corresponding code, request details, and logs update together.
+4. At stage 7 or 8, click **Try the wrong-field example** to demonstrate why `data.message` is undefined and `data.args.message` works.
+
+Previous, Restart, and the numbered stage buttons let you revisit the transaction without sending another request. Arrow keys also advance the replay.
+
+![The completed API teaching demo](G:/23/API_NC/output/playwright/teaching-replay.png)
+
+The **four teaching panels and stage explanation fit together at 1440 × 900**. The built-in evidence panels are clearly labeled; actual DevTools still shows the real Network transaction and Console logs.
+
+**Verified:** live data and Unicode, safe rendering, synchronized highlights, no extra replay requests, real HTTP 404, offline failure, missing data, malformed JSON, the 15-second timeout, keyboard controls, reduced motion, and mobile layout.
+
+The checkpoint commits are published in [mrmcgrain/API_NC](https://github.com/mrmcgrain/API_NC):
+
+- `7cbc028` — Display echoed messages and handle missing data and request failures.
+- `d36762b` — Add synchronized API journey replay with source and evidence panels.
+- `9a207f9` — Polish classroom layout and add three-minute presentation guide.
+
+Your [three-minute presenter guide](G:/23/API_NC/PRESENTATION.md) is ready. Project records and recaps are saved and mirrored to Obsidian with hash verification. Your rehearsal is the remaining classroom preparation.
