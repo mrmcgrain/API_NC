@@ -54,4 +54,3 @@ All implementation checkpoints complete and published. Remote main verified to m
 2026-10-08: browser QA verified real echo including spaces, ampersand, Unicode and literal HTML; evidence gating; all highlights; zero replay HTTP requests; wrong-field example; real HTTP 404; offline handling; controlled malformed JSON; local no-data fixture; keyboard navigation; reduced motion; 1440x900 desktop fit and 390px mobile overflow. Separate browser check verified 15-second timeout and omitted unobserved response stages. node --check app.js passed.
 
 Checkpoint commits: 7cbc028 (display/errors), d36762b (replay/evidence), 9a207f9 (presentation polish/guide). Checkpoint 1 was already published as 5470a43. Publication and sync results are recorded in conversation history after verification.
-
