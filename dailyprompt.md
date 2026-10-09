@@ -14,3 +14,9 @@ Coverage: repository setup in this chat only; earlier project work is unavailabl
 Sources: [Conversation log](logs/conversation-log.md), [transcript](logs/prompt-log.md).
 
 Last updated: 2026-10-08 20:06:45 -07:00
+
+### Publication update, 2026-10-08
+- Owner approved checkpoint 1 and automatic routine commits/pushes, superseding earlier review gates.
+- Published checkpoint 1 as 5470a43 to origin/main; remote SHA verified against local HEAD.
+- JavaScript syntax and staged whitespace checks passed. Runtime was not retested.
+- Next: result display/error handling, then teaching replay.

@@ -12,3 +12,7 @@ Coverage: 2026-10-08 repository setup in this chat only.
 Source: [Daily accomplishments](dailyprompt.md), [conversation log](logs/conversation-log.md).
 
 Last updated: 2026-10-08 20:06:45 -07:00
+
+### Publication update, 2026-10-08
+- Published checkpoint 1 to public mrmcgrain/API_NC and verified matching local and remote commit.
+- Owner authorized automatic routine commits and pushes. Earlier pending-review statements above describe the setup snapshot.

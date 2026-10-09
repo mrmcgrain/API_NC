@@ -17,7 +17,7 @@ Python's HTTP server serves local files only.
 ## Services
 - Suggested local preview: 127.0.0.1:8080. Running state unverified.
 - External API: httpbin.org, no key required.
-- Public GitHub repository: https://github.com/mrmcgrain/API_NC, created empty.
+- Public GitHub repository: https://github.com/mrmcgrain/API_NC, checkpoint 1 published on main.
 - Local origin: https://github.com/mrmcgrain/API_NC.git.
 
 ## Environment
@@ -30,15 +30,14 @@ Windows, PowerShell, Git, Python and GitHub CLI available. No app dependencies.
 
 ## Known Issues
 - GitHub CLI is not authenticated.
-- No commits yet; current unborn branch is main. Nothing staged or pushed.
+- No known publication blocker. Git Credential Manager successfully authenticated the push.
 - Persistent records were missing. Logging begins with this session, not earlier history.
 
 ## Current Work
-Checkpoint 1 approved; preparing initial commit and push.
+Checkpoint 1 published. Routine future commits and pushes are authorized.
 
 ## TODO
-- Publish the approved first checkpoint and verify remote commit.
 - Implement the result display and error-handling checkpoint, then the teaching replay when development resumes.
 
 ## Last Known Working State
-JavaScript syntax check passed with node --check app.js. Public empty repository verified in GitHub UI. Local origin configured and remote access verified. Runtime behavior has not been verified in this session.
+2026-10-08: checkpoint 1 committed as 5470a43 and pushed to origin/main. Remote SHA matched the local commit. node --check app.js and git diff --cached --check passed. Runtime behavior was not retested during publication. Repository-local author identity uses the authenticated owner's GitHub noreply address.

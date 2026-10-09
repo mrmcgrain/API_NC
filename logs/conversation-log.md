@@ -37,3 +37,28 @@ Verification:
 ### Next Steps
 - User reviews checkpoint 1 before first commit.
 - Commit and publish source after review approval, verifying push authentication then.
+
+## 2026-10-08, checkpoint 1 publication
+
+### User Request
+Push the current checkpoint and allow automatic pushes for routine future changes.
+
+### Codex Response
+Published checkpoint 1 to origin/main. The new authorization supersedes the previous pre-commit approval requirement for routine changes.
+
+### Actions
+Commands:
+- node --check app.js and git diff --cached --check passed.
+- Set repository-local Git author to authenticated owner Michael McGrain with GitHub noreply email.
+- git add the explicit application/documentation file list, then git commit created 5470a43.
+- git push -u origin main succeeded through Git Credential Manager.
+- git ls-remote origin refs/heads/main matched the local HEAD.
+Files changed:
+- README.md, CHANGELOG.md and project state: updated authorized commit/push workflow.
+- Transcript and daily/weekly recaps: captured publication and authorization.
+Errors/Fixes:
+- No Git author was configured; set local identity from the connected GitHub profile, using its noreply address.
+- GitHub CLI remains unauthenticated, but Git Credential Manager authenticated the push successfully.
+
+### Next Steps
+- Continue the result-display/error-handling checkpoint, then the teaching replay when development resumes.
